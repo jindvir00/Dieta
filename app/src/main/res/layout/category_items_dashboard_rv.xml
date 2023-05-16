@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardview_item_recipe"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_item_height"
+        android:layout_margin="@dimen/margin_views"
+        app:cardBackgroundColor="@color/greyLight"
+        app:cardCornerRadius="@dimen/radius_val"
+        app:cardElevation="@dimen/elevation_val">
+
+
+
+            <RelativeLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:elevation="@dimen/elevation_val">
+
+
+                <ImageView
+                    android:elevation="@dimen/elevation_val"
+                    android:id="@+id/item_img_fetch"
+                    android:layout_width="@dimen/card_item_height"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/margin_views"
+                    android:maxWidth="@dimen/card_item_height"
+                    android:maxHeight="@dimen/card_item_height"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+
+                    android:scrollHorizontally="true"
+                    android:id="@+id/recycler_tv_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/item_img_fetch"
+                    android:fontFamily="@font/alice"
+                    android:layout_marginTop="@dimen/margin_views"
+                    android:maxLines="1"
+                    android:paddingTop="@dimen/margin_views"
+                    android:paddingEnd="@dimen/margin_views"
+                    android:textStyle="bold"
+                    android:layout_alignParentTop="true"
+                    android:text="Panner Butter Masala"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/recipe_prev_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/summary_height"
+                    android:layout_below="@id/recycler_tv_category"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="@dimen/margin_views"
+                    android:layout_toEndOf="@id/item_img_fetch"
+                    android:gravity="start"
+                    android:maxLines="4"
+                    android:paddingEnd="@dimen/margin_views"
+                    android:fontFamily="@font/alice"
+                    android:text="Panner Butter Masala Panner Butter Masala Panner Butter Panner Butter Masala Panner Butter MasalaMasala Panner Butter Masala "
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/item_img_fetch"
+                    android:paddingBottom="@dimen/search_margin_start"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/margin_views"
+                    android:layout_marginEnd="@dimen/search_margin_start"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/nutrition_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/nutritional_value"
+                        android:textSize="12sp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/procedure_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/procedure"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/alice"
+                        android:textStyle="bold"
+                        android:layout_marginStart="@dimen/search_margin_start"
+                        android:gravity="center|end" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

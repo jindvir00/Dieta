@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Dieta</string>
+    <string name="login_button_text">Login</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="register_text">Register</string>
+    <string name="sign_up">Signup</string>
+    <string name="meals">Meals</string>
+    <string name="recipes">Recipes</string>
+    <string name="apiKey">6380d293a78b40189a8b608c7a726bc3</string>
+    <string name="nutritional_value">Nutritional Value</string>
+    <string name="procedure">Procedure</string>
+
+    <string-array name="tags">
+        <item>main course</item>
+        <item>side dish</item>
+        <item>dessert</item>
+        <item>appetizer</item>
+        <item>salad</item>
+        <item>bread</item>
+        <item>breakfast</item>
+        <item>soup</item>
+        <item>beverage</item>
+        <item>sauce</item>
+        <item>marinade</item>
+        <item>fingerfood</item>
+        <item>snack</item>
+        <item>drink</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/similar_mv"
+        app:cardBackgroundColor="@color/greyLight"
+        android:layout_width="@dimen/card_item_height"
+        android:layout_height="@dimen/card_item_height"
+        android:layout_margin="@dimen/margin_views"
+        app:cardCornerRadius="@dimen/radius_val"
+        app:cardElevation="@dimen/elevation_val">
+
+
+
+            <RelativeLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:elevation="@dimen/elevation_val">
+
+                <TextView
+                    android:scrollHorizontally="true"
+                    android:id="@+id/similar_procedure_tv_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_marginTop="@dimen/margin_views"
+                    android:maxLines="1"
+                    android:paddingTop="@dimen/margin_views"
+                    android:padding="@dimen/margin_views"
+                    android:layout_margin="@dimen/margin_views"
+                    android:layout_alignParentTop="true"
+                    android:text="Panner Butter Masala"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+
+                <ImageView
+                    android:elevation="@dimen/elevation_val"
+                    android:id="@+id/similar_item_img_fetch"
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/similar_procedure_tv_category"
+                    android:layout_height="match_parent"
+                    android:maxWidth="@dimen/card_item_height"
+                    android:maxHeight="@dimen/card_item_height"
+                    android:scaleType="centerCrop"/>
+
+            </RelativeLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>
